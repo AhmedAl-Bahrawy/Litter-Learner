@@ -1,0 +1,12 @@
+.NavButton {
+  display: flex;
+  padding: 1.25rem 2.125rem;
+  align-items: center;
+  align-self: stretch;
+  border: none;
+
+  border-left: 2px solid var(--Grey-15, #262626);
+  background: var(--Orange-95, #ffefe5);
+  gap: 0.625rem;
+  height: 100%;
+}

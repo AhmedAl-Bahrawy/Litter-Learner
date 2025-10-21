@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  font-family: Outfit;
   --AbsoluteColor-Black: #000000;
   --AbsoluteColor-White: #ffffff;
   --Orange-65: #ff8d4c;
@@ -40,6 +41,7 @@ body {
 }
 
 #root {
+  font-family: Outfit;
   width: 100%;
   min-height: 100vh;
 }

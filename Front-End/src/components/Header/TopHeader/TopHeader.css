@@ -4,9 +4,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+    align-self: stretch;
 }
 
-.text {
+.banner-text {
   color: var(--Grey-15, #262626);
   font-family: Outfit;
   font-size: 1.25rem;
