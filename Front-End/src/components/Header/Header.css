@@ -1,0 +1,8 @@
+.Header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.875rem;
+  position: relative;
+  width: 100%;
+}

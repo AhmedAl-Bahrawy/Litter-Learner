@@ -1,0 +1,45 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --AbsoluteColor-Black: #000000;
+  --AbsoluteColor-White: #ffffff;
+  --Orange-65: #ff8d4c;
+  --Orange-70: #ff9e66;
+  --Orange-75: #ffae80;
+  --Orange-80: #ffbe99;
+  --Orange-90: #ffdecc;
+  --Orange-95: #ffe5e5;
+  --Orange-97: #fff5f0;
+  --Orange-99: #fffcfa;
+  --Grey-10: #191919;
+  --Grey-15: #262626;
+  --Grey-20: #333333;
+  --Grey-30: #4d4d4d;
+  --Grey-35: #59595a;
+  --Grey-40: #656567;
+  --Grey-60: #98989a;
+  --Grey-70: #b3b3b3;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--Orange-97);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
