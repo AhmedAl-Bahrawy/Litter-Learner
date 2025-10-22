@@ -4,9 +4,28 @@
   align-items: center;
   align-self: stretch;
   border: none;
-
+  font-weight: 600;
+  font-family: Outfit;
+  font-size: 1rem;
   border-left: 2px solid var(--Grey-15, #262626);
   background: var(--Orange-95, #ffefe5);
   gap: 0.625rem;
   height: 100%;
+  transition: all 0.3s ease;
+}
+
+.NavButton:hover {
+  background: var(--Orange-85, #ffdecc);
+  cursor: pointer;
+}
+
+.NavButton:disabled {
+  background: var(--Orange-99, #fffcfa);
+  cursor: not-allowed;
+  color: var(--Grey-60, #98989a);
+}
+
+.NavButton:active {
+  background: var(--Orange-75, #ffae80);
+  border-left: 4px solid var(--Grey-10, #191919);
 }

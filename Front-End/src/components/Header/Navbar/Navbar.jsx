@@ -11,12 +11,12 @@ const Navbar = () => {
         <span className="logo-text">Litter Learner</span>
       </div>
       <div className="buttons-container">
-        <NavButton />
-        <NavButton />
-        <NavButton />
-        <NavButton />
-        <NavButton />
-        <NavButton />
+        <NavButton>Home</NavButton>
+        <NavButton>About Us</NavButton>
+        <NavButton>Academics</NavButton>
+        <NavButton>Admissions</NavButton>
+        <NavButton>Student Life</NavButton>
+        <NavButton>Contact</NavButton>
       </div>
     </div>
   );

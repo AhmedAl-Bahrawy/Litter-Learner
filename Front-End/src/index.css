@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   line-height: 1.5;
   font-weight: 400;
-  font-family: Outfit;
+  font-family: Outfit, Raleway;
   --AbsoluteColor-Black: #000000;
   --AbsoluteColor-White: #ffffff;
   --Orange-65: #ff8d4c;
@@ -41,7 +42,7 @@ body {
 }
 
 #root {
-  font-family: Outfit;
+  font-family: Outfit, Raleway;
   width: 100%;
   min-height: 100vh;
 }

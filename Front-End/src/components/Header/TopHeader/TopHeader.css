@@ -19,12 +19,20 @@
 .icon {
   width: 1.575rem;
   height: 1.575rem;
-
+  transition: all 0.3s ease;
   img {
     width: 1.125rem;
     height: 1.3125rem;
     flex-shrink: 0;
     fill: var(--Grey-15, #262626);
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1) translateX(10px);
+    img {
+      fill: var(--Orange-65, #ff8d4c);
+    }
   }
 }
 
