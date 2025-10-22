@@ -1,22 +1,27 @@
 .HeroSection {
   display: flex;
   width: 100%;
-  max-width: 1200px;
+  max-width: 100vw;
   margin: 0 auto;
   align-items: center;
-  gap: 10rem;
-  padding: 2rem;
-  min-height: 80vh;
+  gap: 4rem;
+  padding: 0.75rem 1rem;
+  min-height: 90vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
 
   .image-container {
     display: flex;
-    height: 500px;
+    height: 600px;
     align-items: center;
+    justify-content: center;
     gap: 0.625rem;
     flex: 1 0 0;
+    min-width: 0;
     background: var(--Orange-80, #ffbe99);
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     overflow: hidden;
+    position: relative;
 
     img {
       width: 100%;
@@ -30,14 +35,17 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 3.75rem;
+    justify-content: center;
+    gap: 2.5rem;
     flex: 1 0 0;
+    min-width: 0;
+    padding: 1rem 0;
 
     .sub-container {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      gap: 1.875rem;
+      gap: 1.5rem;
       align-self: stretch;
 
       .container {
@@ -50,19 +58,20 @@
           align-self: stretch;
           color: var(--Grey-10, #1a1a1a);
           font-family: Raleway;
-          font-size: 3.375rem;
+          font-size: 3.5rem;
           font-style: normal;
           font-weight: 800;
-          line-height: 130%;
+          line-height: 1.2;
           margin: 0;
+          text-align: left;
 
           .highlite {
             color: var(--Orange-65, #ff8d4d);
             font-family: Raleway;
-            font-size: 3.375rem;
+            font-size: 3.5rem;
             font-style: normal;
             font-weight: 800;
-            line-height: 130%;
+            line-height: 1.2;
           }
         }
       }
@@ -74,19 +83,23 @@
         font-size: 1.25rem;
         font-style: normal;
         font-weight: 500;
-        line-height: 150%;
+        line-height: 1.6;
         margin: 0;
+        text-align: left;
+        max-width: 100%;
+        word-wrap: break-word;
       }
     }
 
     .sub-container:last-of-type {
       display: flex;
       flex-direction: row;
-      padding: 1.5rem 3.125rem;
-      align-items: flex-start;
-      gap: 1.5rem;
+      padding: 2rem 2.5rem;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
       align-self: stretch;
-      border-radius: 0.75rem;
+      border-radius: 1rem;
       border: 2px solid var(--Grey-15, #262626);
       background: var(--Orange-95, #ffefe5);
       box-shadow: 8px 8px 0 1px #ffbe99;
@@ -94,29 +107,30 @@
       .text-container {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
         flex: 1 0 0;
+        text-align: center;
 
         .num {
-          align-self: stretch;
           color: var(--Grey-15, #262626);
           font-family: Outfit;
-          font-size: 2.75rem;
+          font-size: 2.5rem;
           font-style: normal;
           font-weight: 800;
-          line-height: 150%;
-          margin: 0;
+          line-height: 1.2;
+          margin: 0 0 0.5rem 0;
         }
 
         .under-num {
-          align-self: stretch;
           color: var(--Grey-15, #262626);
           font-family: Outfit;
-          font-size: 1.125rem;
+          font-size: 1rem;
           font-style: normal;
           font-weight: 500;
-          line-height: 150%;
+          line-height: 1.4;
           margin: 0;
+          text-align: center;
         }
       }
     }
@@ -127,80 +141,41 @@
 @media (max-width: 1024px) {
   .HeroSection {
     flex-direction: column;
-    gap: 2rem;
-    padding: 1.5rem;
+    gap: 3rem;
+    padding: 2rem 1rem;
     min-height: auto;
+    max-width: 100%;
 
     .image-container {
-      height: 400px;
+      height: 450px;
       width: 100%;
     }
 
     .container {
       gap: 2rem;
+      padding: 0;
 
       .sub-container .container h4 {
-        font-size: 2.5rem;
+        font-size: 2.75rem;
       }
 
       .sub-container .container h4 .highlite {
-        font-size: 2.5rem;
+        font-size: 2.75rem;
       }
 
       .sub-container p {
         font-size: 1.125rem;
+        max-width: 100%;
       }
 
       .sub-container:last-of-type {
-        flex-direction: column;
+        flex-direction: row;
         gap: 1.5rem;
-        padding: 1.5rem;
+        padding: 1.5rem 2rem;
 
         .text-container {
           text-align: center;
 
-          .num {
-            font-size: 2.25rem;
-          }
-
-          .under-num {
-            font-size: 1rem;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .HeroSection {
-    padding: 1rem;
-    gap: 1.5rem;
-
-    .image-container {
-      height: 300px;
-    }
-
-    .container {
-      gap: 1.5rem;
-
-      .sub-container .container h4 {
-        font-size: 2rem;
-      }
-
-      .sub-container .container h4 .highlite {
-        font-size: 2rem;
-      }
-
-      .sub-container p {
-        font-size: 1rem;
-      }
-
-      .sub-container:last-of-type {
-        padding: 1rem;
-        gap: 1rem;
-
-        .text-container {
           .num {
             font-size: 2rem;
           }
@@ -214,9 +189,60 @@
   }
 }
 
+@media (max-width: 768px) {
+  .HeroSection {
+    padding: 1.5rem 0.75rem;
+    gap: 2rem;
+    max-width: 100%;
+
+    .image-container {
+      height: 350px;
+    }
+
+    .container {
+      gap: 1.5rem;
+
+      .sub-container .container h4 {
+        font-size: 2.25rem;
+      }
+
+      .sub-container .container h4 .highlite {
+        font-size: 2.25rem;
+      }
+
+      .sub-container p {
+        font-size: 1rem;
+        max-width: 100%;
+      }
+
+      .sub-container:last-of-type {
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 1.5rem;
+
+        .text-container {
+          .num {
+            font-size: 1.75rem;
+          }
+
+          .under-num {
+            font-size: 0.85rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 480px) {
   .HeroSection {
-    padding: 0.5rem;
+    padding: 1rem 0.5rem;
+    gap: 1.5rem;
+    max-width: 100%;
+
+    .image-container {
+      height: 280px;
+    }
 
     .container .sub-container .container h4 {
       font-size: 1.75rem;
@@ -228,12 +254,12 @@
 
     .container .sub-container:last-of-type {
       flex-direction: column;
-      gap: 0.75rem;
-      padding: 0.75rem;
+      gap: 1rem;
+      padding: 1rem;
 
       .text-container {
         .num {
-          font-size: 1.75rem;
+          font-size: 1.5rem;
         }
 
         .under-num {
