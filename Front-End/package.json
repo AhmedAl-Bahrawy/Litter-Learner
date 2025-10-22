@@ -1,7 +1,8 @@
 {
-  "name": "front-end-littel-learner",
+  "name": "little-learners-academy-frontend",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Frontend application for Little Learners Academy - Where Young Minds Blossom and Dreams Take Flight",
   "type": "module",
   "scripts": {
     "dev": "vite",
